@@ -1,3 +1,7 @@
+console.log("ENV DEBUG:", {
+  WORKERLINKS_SECRET: typeof WORKERLINKS_SECRET !== 'undefined' ? '✅ set' : '❌ not set',
+});
+
 import { Context as HonoContext, Env as HonoEnv, Hono } from 'hono'
 import * as st from 'simple-runtypes'
 
